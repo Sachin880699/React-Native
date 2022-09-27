@@ -1,0 +1,10 @@
+CMD ) abd devices ( android device check connect ) 
+
+npx react-native run-android
+
+npm start
+
+
+
+
+if not conenct device fourcefully connect device CMD( adb reverse tcp:8081 tcp:8081 ) 
