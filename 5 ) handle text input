@@ -1,0 +1,41 @@
+
+1 ) how to use text input
+2 ) How to user event with textinput
+3 ) how to get value if text input
+4 ) how to get value on button click
+5 ) how to style TextInput
+
+
+
+
+_____________________ Button onclick teake input value ______________
+
+import React, {useState} from 'react';
+import {View, StyleSheet , Text , TextInput , Button} from 'react-native';
+
+const App = () => {
+  const [text,setText] = useState('');
+  return (
+    <View>
+     <TextInput 
+                    style={styles.input}
+                    placeholder="Enter Name"
+                    onChangeText={(text) => setText(text)}
+                    value={text}
+                />
+                <Button title="submit" onPress={() => alert(text)} />
+    </View>
+  );
+}
+const styles = StyleSheet.create({
+  input:{
+    borderColor:"white"
+  },
+})
+export default App;
+
+
+
+
+
+
