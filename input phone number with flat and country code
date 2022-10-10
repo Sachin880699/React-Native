@@ -1,3 +1,11 @@
+yarn add react-native-phone-number-input
+
+
+_______________________________________
+
+
+
+
 
 
 import React, {useState, useRef} from 'react';
